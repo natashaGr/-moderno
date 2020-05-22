@@ -315,7 +315,6 @@
     margin: 0 auto 30px;
     transition: all 0.5s;
     svg {
-     
     }
   }
   &-title {
@@ -347,3 +346,41 @@
   }
 }
 //  end advantages
+// start author
+.author {
+  min-height: 750px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-image: url(../images/content/author-bg.jpg);
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  &__box {
+    max-width: 650px;
+    width: 100%;
+    min-height: 215px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: $green;
+  }
+  &__title {
+    max-width: 260px;
+    margin-right: 45px;
+    font-size: 30px;
+    line-height: 30px;
+    color: #fff;
+    span {
+      font-weight: 700;
+    }
+  }
+  &__link {
+    font-size: 18px;
+    line-height: 36px;
+    padding: 14px 40px;
+    background-color: #fff;
+  }
+}
+
+// end author
