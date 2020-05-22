@@ -417,3 +417,168 @@
 }
 
 // end tutorial
+
+// start footer
+.footer {
+  background-color: $bg;
+  &__inner {
+    display: flex;
+    justify-content: space-between;
+    padding: 100px 0 80px;
+  }
+}
+
+.footer__col {
+  max-width: 270px;
+  width: 100%;
+  &--menu {
+    max-width: 220px;
+  }
+  &-title {
+    position: relative;
+    padding-bottom: 30px;
+    margin-bottom: 30px;
+    font-family: "Raleway", sans-serif;
+    font-size: 22px;
+    font-weight: 700;
+    color: #fff;
+    &::after {
+      content: "";
+      position: absolute;
+      bottom: 0;
+      left: 2px;
+      width: 51px;
+      height: 3px;
+      background-color: $green;
+    }
+  }
+  &-text {
+    color: #b7c3c8;
+    margin-bottom: 30px;
+  }
+}
+
+.footer__info {
+  position: relative;
+  margin-top: 18px;
+  padding-left: 30px;
+  font-weight: 500;
+  color: #fff;
+  &::before {
+    content: "\f041";
+    position: absolute;
+    left: 0;
+    font-family: "icomoon";
+    color: $green;
+    font-size: 18px;
+  }
+  &--phone {
+    &::before {
+      content: "\f095";
+    }
+  }
+}
+
+.footer__col {
+  &-list {
+    a {
+      position: relative;
+      padding-left: 22px;
+      display: inline-block;
+      margin-bottom: 15px;
+      color: #b7c3c8;
+      &::before {
+        content: "\f105";
+        position: absolute;
+        left: 0;
+        font-family: "icomoon";
+        font-size: 18px;
+        color: $green;
+      }
+    }
+  }
+}
+
+.footer__social-link {
+  margin-bottom: 33px;
+  li {
+    display: inline-block;
+    & + li {
+      margin-left: 7px;
+    }
+  }
+  a {
+    display: inline-block;
+    width: 28px;
+    height: 28px;
+    background-image: url(../images/css_sprites.png);
+  }
+}
+
+.link-facebook {
+  background-position: -196px -28px;
+}
+.link-twitter {
+  background-position: -28px -0;
+}
+.link-youtube {
+  background-position: -0 -28px;
+}
+.link-pinterest {
+  background-position: -83px -56px;
+}
+.link-linkedin {
+  background-position: -56px -56px;
+}
+.footer__copy {
+  border-top: 1px solid #424d53;
+}
+.footer__copy-text {
+  padding: 25px 0;
+  text-align: center;
+  font-size: 15px;
+  color: #919699;
+}
+
+.footer__form {
+  position: relative;
+  &-title {
+    margin-bottom: 15px;
+    font-size: 20px;
+    color: #fff;
+  }
+  input {
+    display: block;
+    width: 100%;
+    height: 40px;
+    padding: 0 50px 0 13px;
+    border: none;
+    background-color: #2f3c43;
+    font-size: 14px;
+    color: #fff;
+    &::placeholder {
+      color: #697378;
+    }
+  }
+  button {
+    position: absolute;
+    width: 43px;
+    height: 40px;
+    bottom: 0;
+    right: 0;
+    background-color: $green;
+    border: none;
+    cursor: pointer;
+    &::before {
+      content: "\f124";
+      position: absolute;
+      top: 11px;
+      left: 13px;
+      font-size: 20px;
+      font-family: 'icomoon';
+      color: #fff;
+    }
+  }
+}
+
+// end footer
