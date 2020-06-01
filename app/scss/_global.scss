@@ -1,3 +1,5 @@
+@import "fonts";
+
 html {
   box-sizing: border-box;
 }
@@ -33,6 +35,8 @@ li {
   display: flex;
   flex-direction: column;
   min-height: 100%;
+  position: relative;
+  overflow-x: hidden;
 }
 .content {
   flex: 1 0 auto;
@@ -50,6 +54,7 @@ body {
   font-size: 15px;
   line-height: 24px;
   color: $text;
+  overflow-x: hidden;
 }
 
 .container {
@@ -109,5 +114,19 @@ body {
     &--active {
       color: $bg;
     }
+  }
+}
+
+.angel-right {
+  position: relative;
+  display: inline-block;
+  padding-left: 15px;
+  &::before {
+    content: "\f105";
+    position: absolute;
+    left: 0;
+    color: $green;
+    font-size: 14px;
+    font-family: 'icomoon';
   }
 }
