@@ -350,6 +350,118 @@
 }
 // finis header
 
+// start modal
+
+#modal {
+  background-color: $green;
+  max-width: 730px;
+  width: 100%;
+  padding: 90px 0 100px;
+}
+
+.login__wrapper {
+  form {
+    max-width: 400px;
+    margin: 0 auto;
+  }
+  label {
+  }
+  input {
+    display: block;
+    width: 100%;
+    height: 43px;
+    margin-bottom: 8px;
+    border: none;
+    background-color: #76ae36;
+    color: #fff;
+    font-size: 14px;
+    padding: 0 40px;
+    outline: transparent;
+
+    &::placeholder {
+      color: #fff;
+    }
+  }
+  button {
+    margin-top: 19px;
+    padding: 18px 0 16px;
+    width: 140px;
+    text-transform: uppercase;
+    background-color: #fff;
+    border: none;
+    margin-right: 10px;
+    font-weight: 700;
+    color: #000;
+    text-align: center;
+    box-shadow: 0 2px 2px rgba(118, 174, 54, 0.75);
+  }
+}
+
+.creat-acc {
+  display: inline-block;
+  width: 246px;
+  margin-top: 19px;
+  text-align: center;
+  background-color: #76ae36;
+  padding: 15px 0 15px 28px;
+  color: #fff;
+  font-size: 18px;
+  position: relative;
+  &::before {
+    content: "\f044";
+    font-family: "icomoon";
+    position: absolute;
+    left: 35px;
+    top: 15px;
+  }
+}
+
+.fancybox-button svg path {
+  color: #fff;
+}
+
+.lost__pass {
+  display: block;
+  margin-top: 20px;
+  color: #fff;
+  font-size: 18px;
+}
+
+.login__label {
+  position: relative;
+  display: block;
+  width: 100%;
+  &::before {
+    position: absolute;
+    left: 18px;
+    top: 10px;
+    font-family: "icomoon";
+    font-size: 14px;
+    color: #fff;
+  }
+  &--name {
+    &::before {
+      content: "\f007";
+    }
+  }
+
+  &--pass {
+    &::before {
+      content: "\f023";
+    }
+  }
+}
+.login__title {
+  margin-bottom: 40px;
+  text-align: center;
+  color: #fff;
+  font-size: 48px;
+  font-weight: 700;
+  text-transform: uppercase;
+}
+
+// end modal
+
 // Start search
 
 .search {
@@ -1641,7 +1753,257 @@ button.icon-sort {
     display: block;
   }
 }
-
 // / end product-one
 
+// start page 404
+.page-404__wrapper {
+  border: 1px solid #d7d7d7;
+  background-color: #fff;
+  margin-bottom: 150px;
+}
+
+.page-404__head {
+  padding: 23px 27px;
+  font-size: 24px;
+  font-weight: 500;
+  color: #444444;
+}
+
+.page-404__inner {
+  text-align: center;
+  background-color: $green;
+}
+
+.page-404__404 {
+  padding-top: 90px;
+  padding-bottom: 50px;
+  line-height: 300px;
+  color: #fffefe;
+  font-size: 300px;
+  font-weight: 800;
+  font-family: "Open Sans", sans-serif;
+  position: relative;
+  &::after {
+    content: "";
+    position: absolute;
+    margin-left: 15px;
+    width: 150px;
+    height: 292px;
+    background-image: url(../images/content/page-404.png);
+  }
+}
+
+.page-404__title {
+  margin-bottom: 33px;
+  font-size: 30px;
+  font-weight: 300;
+  letter-spacing: 6px;
+  color: #fff;
+}
+
+.page-404__text {
+  max-width: 529px;
+  margin: 0 auto;
+  font-size: 18px;
+  line-height: 24px;
+  color: #ffffff;
+  margin-bottom: 56px;
+}
+
+.page-404__link {
+  display: inline-block;
+  padding: 20px 30px;
+  font-size: 14px;
+  font-weight: 700;
+  text-transform: uppercase;
+  letter-spacing: 1.4px;
+  color: #ffffff;
+  border: 2px solid #ffffff;
+  margin-bottom: 100px;
+}
+
+// end page 404
+
+// start about
+
+.about {
+  padding: 42px 0 144px;
+}
+
+.about__wrapper {
+  background-color: #fff;
+  padding: 21px 0 0;
+  border: 1px solid #d7d7d7;
+  background-color: #ffffff;
+}
+
+.about__head {
+  padding: 0 33px 25px;
+  font-size: 24px;
+  font-weight: 500;
+  color: $bg;
+  border-bottom: 1px solid #d7d7d7;
+}
+
+.about__inner {
+  padding: 44px 50px 0;
+}
+
+.about__title {
+  color: #444444;
+  font-size: 20px;
+  font-weight: 700;
+  margin-bottom: 23px;
+}
+
+.about__descr {
+  color: #707070;
+  line-height: 24px;
+  margin-bottom: 53px;
+}
+// end about
+
+// start contact
+.contact {
+  padding-bottom: 137px;
+  &__wrapper {
+    background-color: #fff;
+    padding: 21px 0 0;
+    border: 1px solid #d7d7d7;
+    background-color: #ffffff;
+  }
+
+  &__head {
+    padding: 0 40px 25px;
+    font-size: 24px;
+    font-weight: 500;
+    color: $bg;
+    border-bottom: 1px solid #d7d7d7;
+  }
+
+  &__inner {
+    padding: 35px 40px 15px;
+  }
+
+  &__map {
+    margin-bottom: 50px;
+    iframe {
+      width: 100%;
+      height: 415px;
+    }
+  }
+
+  &__box {
+    display: flex;
+  }
+
+  &__info {
+    max-width: 338px;
+    margin-right: 30px;
+    width: 100%;
+  }
+
+  &__info-item {
+    margin-bottom: 30px;
+  }
+
+  &__info-title {
+    padding-bottom: 20px;
+    position: relative;
+    font-family: "Roboto", sans-serif !important;
+    font-size: 20px;
+    font-weight: 500 !important;
+    color: $bg;
+    padding-left: 40px;
+
+    &::after {
+      content: "";
+      position: absolute;
+      width: 44px;
+      height: 4px;
+      left: 40px;
+      bottom: 0;
+      background-color: $green;
+    }
+    &::before {
+      position: absolute;
+      left: 0;
+      color: $green;
+      font-size: 24px;
+      font-family: "icomoon";
+    }
+  }
+
+  &__info-content {
+    display: block;
+    max-width: 272px;
+    width: 100%;
+    padding-left: 43px;
+    margin-top: 20px;
+    color: #707070;
+    line-height: 24px;
+  }
+
+  &__form-title {
+    margin-bottom: 23px;
+    font-size: 24px;
+    font-weight: 500;
+    color: #333;
+  }
+
+  &__form-row {
+    display: flex;
+    justify-content: space-between;
+  }
+
+  &__form {
+    input {
+      display: inline-block;
+      width: 350px;
+      margin-bottom: 30px;
+      border: none;
+      height: 43px;
+      padding: 0 17px;
+      background-color: #f1f4f5;
+
+      & + input {
+        margin-left: 25px;
+      }
+      &::placeholder {
+        font-size: 15px;
+        color: #7a7a7a;
+      }
+    }
+
+    textarea {
+      display: block;
+      width: 100%;
+      height: 190px;
+      border: none;
+      padding: 13px 17px;
+      margin-bottom: 22px;
+      background-color: #f1f4f5;
+      resize: none;
+      &::placeholder {
+        font-size: 15px;
+        color: #7a7a7a;
+      }
+    }
+
+    button {
+      display: inline-block;
+      width: 190px;
+      padding: 20px 5px;
+      border: none;
+      font-size: 16px;
+      font-weight: 700;
+      line-height: 24px;
+      text-transform: uppercase;
+      background-color: $green;
+      color: #fff;
+
+    }
+  }
+}
+// end contact
 @import "media";
